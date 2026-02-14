@@ -1,5 +1,5 @@
 // Calculate accurate years, months, days since anniversary
-let anniversary = new Date(2025, 3, 5); // April 5, 2025 (month is 0-indexed)
+let anniversary = new Date(2025, 6, 29); // April 5, 2025 (month is 0-indexed)
 let today = new Date();
 
 let years = today.getFullYear() - anniversary.getFullYear();
