@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
+    <title>For My Baby ❤️</title>
+    <link rel="icon" href="icons/tab-icon.png"/>
+    <link rel="stylesheet" href="style 2.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        love: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            300: '#fda4af',
+                            400: '#fb7185',
+                            500: '#f43f5e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body style="font-family: 'Comic Neue';" class="relative snap-y snap-mandatory overflow-y-scroll h-screen">
+
+    <!-- RAINING HEARTS -->
+    <div class="hearts-rain" aria-hidden="true"></div>
+
+    <!-- MUSIC PLAYER -->
+    <div class="fixed left-4 bottom-4 sm:left-6 sm:bottom-6 z-50">
+        <div class="music-container relative bg-white/90 backdrop-blur-md border-2 z-10 rounded-2xl border-rose-300 shadow-lg shadow-pink-200/40">
+            <!-- Close/Open toggle -->
+            <div class="toggle-player bg-white border-2 border-rose-300">
+                <img class="w-full" src="icons/close.svg" alt="">
+            </div>
+            <div class="player">
+                <!-- Left: avatar + sound bars -->
+                <div class="player-left">
+                    <div class="avatar">
+                        <img class="w-full border-2 bg-white border-rose-300 rounded-xl" src="icons/pinkheart.svg" alt="">
+                    </div>
+                    <div class="sound-bars-lottie">
+                        <div class="sound-bars"></div>
+                    </div>
+                </div>
+                <!-- Middle: song info -->
+                <div class="track-info">
+                    <div class="trackname">Only</div>
+                    <div class="trackartist">Track Artist</div>
+                </div>
+                <!-- Right: controls -->
+                <div class="track-nav">
+                    <div class="prev-track">
+                        <img src="icons/backplayer.svg" alt="">
+                    </div>
+                    <div class="playpause-track">
+                        <img src="icons/play.svg" alt="">
+                    </div>
+                    <div class="next-track">
+                        <img style="transform: rotate(180deg);" src="icons/backplayer.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 1: ENVELOPE -->
+    <div class="background snap-start">
+        <div class="one">
+            <!-- <img src="icon/back.svg" alt="hi"> -->
+            <div class="section-overlay"></div>
+            <div class="container">
+                <div class="envelope-wrapper">
+                    <div class="envelope">
+                        <div class="letter">
+                            <div class="text">
+                                <strong style="font-size: .89rem;">Dear My Princess,</strong>
+                                <p style="text-indent: 15px;">
+                                </p>
+                                <p class="love">You've brought so much joy and light into my life🥹, and every moment with you has only made me realize how deeply I care about you. I LOVE YOU SO MUCH❤️, more than words can express. So 👀👀 Could I be your Valentine?!️❤️</p>
+                                <!-- <div class="pana">
+                                    <img src="icons/heartarrow.svg" alt="">
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 2: ABOUT HER -->
+    <div class="w-full h-[100vh] z-0 relative snap-start overflow-hidden">
+        <!-- BACKGROUND -->
+        <!-- <img class="w-full h-full object-cover" src="icon/back.svg" alt=""> -->
+        <div class="section-overlay"></div>
+        <!-- CONTENT -->
+        <div class="absolute top-0 h-full flex items-center justify-center flex-col w-full px-4">
+            <!-- CARD -->
+            <div id="window" class="card-base w-[90vw] max-w-[34rem] flex justify-center flex-col">
+                 <!-- GIFS -->
+                <div id="gif" class="gif-float absolute -top-12 -left-8 sm:-top-20 sm:-left-44 md:-left-60">
+                    <img class="w-full -rotate-12" src="https://media.tenor.com/Xmr01nUr0I0AAAAi/cute-dog.gif" alt="">
+                </div>
+                <div id="gif" class="gif-float absolute -bottom-12 -left-8 sm:-bottom-20 sm:-left-44 md:-left-60" style="animation-delay: 1s;">
+                    <img class="w-full rotate-12" src="https://media.tenor.com/X3MIBBH6ZgMAAAAi/doglookinghungryandsnacking-dog.gif" alt="">
+                </div>
+                <div id="gif" class="gif-float absolute -top-12 -right-8 sm:-top-20 sm:-right-44 md:-right-60" style="animation-delay: 0.5s;">
+                    <img class="w-full rotate-3" src="https://media.tenor.com/xI8X94Z_emgAAAAi/puppy-dog.gif" alt="">
+                </div>
+                <div id="gif" class="gif-float absolute -bottom-12 -right-8 sm:-bottom-20 sm:-right-44 md:-right-60" style="animation-delay: 1.5s;">
+                    <img class="w-full -rotate-12" src="https://media.tenor.com/l5ebZnCiFtoAAAAi/dog-dog-pop.gif" alt="">
+                </div>
+                <!-- Header bar -->
+                <div class="flex items-center px-3 py-2 justify-between w-full border-b-2 border-rose-200">
+                    <div>
+                        <img class="w-5" src="icons/back.svg" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-extrabold text-base sm:text-lg text-rose-600">My Beautiful Princess</h1>
+                    </div>
+                    <div>
+                        <img class="w-5 sm:w-6" src="icons/x.svg">
+                    </div>
+                </div>
+                <!-- Title section -->
+                <div class="relative border-b-2 border-rose-200">
+                    <div class="absolute bottom-2 left-8 sm:left-12 w-10 sm:w-14">
+                        <img class="rotate-12 w-full" src="icons/fingerheart.png" alt="">
+                    </div>
+                    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 w-10 sm:w-12">
+                        <img class="rotate-12 w-full" src="icons/dog.svg" alt="">
+                    </div>
+                    <div class="absolute bottom-2 right-10 sm:right-14 w-9 sm:w-11">
+                        <img class="-rotate-12 w-full" src="icons/herheart.svg" alt="">
+                    </div>
+                    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 w-8 sm:w-10">
+                        <img class="-rotate-12 w-full" src="icons/herbleh.svg" alt="">
+                    </div>
+                    <div class="text-center py-4 sm:py-5">
+                        <h1 class="font-extrabold text-3xl sm:text-5xl text-rose-500">About My Baby</h1>
+                        <p class="text-sm sm:text-base text-rose-400">Intelligent/Beautiful/Weird Die😭</p>
+                    </div>
+                </div>
+                <!-- IMAGES -->
+                <div class="flex justify-center overflow-hidden">
+                    <div class="w-full flex justify-center py-4 sm:py-5 gap-2 sm:gap-3 px-3">
+                        <img class="w-28 sm:w-40 rounded-lg object-cover" src="img/Babe/IMG_2308.jpg" alt="">
+                        <img class="w-28 sm:w-40 rounded-lg object-cover" src="img/Babe/output.gif" alt="">
+                        <img class="w-28 sm:w-40 rounded-lg object-cover" src="img/Babe/IMG_1667.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <!-- SECTION 3: ABOUT HIM -->
+    <div class="w-full h-[100vh] z-0 relative snap-start overflow-hidden">
+        <!-- BACKGROUND -->
+        <!-- <img class="w-full h-full object-cover" src="icon/back.svg" alt=""> -->
+        <div class="section-overlay"></div>
+        <!-- CONTENT -->
+        <div class="absolute top-0 h-full flex items-center justify-center flex-col w-full px-4">
+            <!-- CARD -->
+            <div id="window" class="card-base w-[90vw] max-w-[34rem] flex justify-center flex-col">
+                <!-- GIFS -->
+                <div id="gif" class="gif-float absolute -top-12 -left-8 sm:-top-20 sm:-left-44 md:-left-60 w-28 sm:w-40">
+                    <img class="w-full -rotate-6" src="https://media.tenor.com/ULt1QoO_tc0AAAAj/cat-vibe-vibe-cat.gif" alt="">
+                </div>
+                <div id="gif" class="gif-float absolute -bottom-12 -left-8 sm:-bottom-20 sm:-left-48 md:-left-64 w-28 sm:w-44" style="animation-delay: 0.8s;">
+                    <img class="w-full -rotate-6" src="https://media.tenor.com/u56nhKZD24AAAAAi/catkiss-cat.gif" alt="">
+                </div>
+                <div id="gif" class="gif-float absolute -top-12 -right-8 sm:-top-20 sm:-right-48 md:-right-64 w-28 sm:w-44" style="animation-delay: 1.2s;">
+                    <img class="w-full rotate-6" src="https://media.tenor.com/cqQ9eq9xIrgAAAAi/cat.gif" alt="">
+                </div>
+                <div id="gif" class="gif-float absolute -bottom-12 -right-8 sm:-bottom-20 sm:-right-44 md:-right-64 w-28 sm:w-40" style="animation-delay: 0.4s;">
+                    <img class="w-full rotate-6" src="https://media.tenor.com/SI5tOTnHS34AAAAi/verycat-twitch-cat-twitch-emote.gif" alt="">
+                </div>
+                <!-- Header bar -->
+                <div class="flex items-center px-3 py-2 justify-between w-full border-b-2 border-rose-200">
+                    <div>
+                        <img class="w-5" src="icons/back.svg" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-extrabold text-base sm:text-lg text-rose-600">Your Babyyyyy</h1>
+                    </div>
+                    <div>
+                        <img class="w-5 sm:w-6" src="icons/x.svg" alt="">
+                    </div>
+                </div>
+                <!-- Title section -->
+                <div class="relative border-b-2 border-rose-200">
+                    <div class="absolute bottom-2 left-8 sm:left-12 w-9 sm:w-11">
+                        <img class="rotate-12 w-full" src="icons/gaming.svg" alt="">
+                    </div>
+                    <div class="absolute top-2 right-2 sm:top-3 sm:right-3 w-10 sm:w-12">
+                        <img class="rotate-12 w-full" src="icons/cat.svg" alt="">
+                    </div>
+                    <div class="absolute bottom-2 right-10 sm:right-14 w-10 sm:w-12">
+                        <img class="-rotate-12 w-full" src="icons/cool.svg" alt="">
+                    </div>
+                    <div class="absolute top-2 left-2 sm:top-3 sm:left-3 w-8 sm:w-10">
+                        <img class="-rotate-12 w-full" src="icons/hisbleh.svg" alt="">
+                    </div>
+                    <div class="text-center py-4 sm:py-5">
+                        <h1 class="font-extrabold text-3xl sm:text-5xl text-rose-500">About Meeeeee</h1>
+                        <p class="text-sm sm:text-base text-rose-400">Lover-Boy/The 🐐/Funny Die</p>
+                    </div>
+                </div>
+                <!-- IMAGES -->
+                <div class="flex justify-center overflow-hidden">
+                    <div class="w-full flex justify-center py-4 sm:py-5 gap-2 sm:gap-3 px-3">
+                        <img class="w-28 sm:w-40 rounded-lg object-cover" src="img/Me/B77039CF-7769-4A55-819B-9ADFB9D6714A.JPG" alt="">
+                        <img class="w-28 sm:w-40 rounded-lg object-cover" src="img/Me/output.gif" alt="">
+                        <img class="w-28 sm:w-40 rounded-lg object-cover" src="img/Me/IMG_4462.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <!-- SECTION 4: COUNTER -->
+    <div class="w-full h-[100vh] z-0 relative snap-start overflow-hidden">
+        <!-- BACKGROUND -->
+        <!-- <img class="w-full h-full object-cover" src="icon/back.svg" alt=""> -->
+        <div class="section-overlay"></div>
+        <div class="absolute top-0 w-full h-full flex justify-center items-center px-4">
+            <!-- COUNTER CARD -->
+            <div class="flex bg-white/90 backdrop-blur-md gap-3 sm:gap-5 relative border-2 z-10 border-rose-300 flex-col px-4 sm:px-5 pb-3 shadow-lg shadow-pink-200/40 pt-7 sm:pt-9 rounded-2xl">
+                <!-- GIFS -->
+                <div class="absolute top-1 right-1 w-7">
+                    <img class="w-full" src="icons/heart.svg" alt="">
+                </div>
+                <div class="gif-float absolute -top-14 -left-10 sm:-top-20 sm:-left-56 w-28 sm:w-44">
+                    <img class="w-full -rotate-6" src="https://media.tenor.com/dg7Th23TzFUAAAAi/cat_-vodk.gif" alt="">
+                </div>
+                <div class="gif-float absolute -bottom-3 -right-10 sm:-bottom-3 sm:-right-52 w-28 sm:w-44" style="animation-delay: 0.7s;">
+                    <img class="w-full" src="https://media.tenor.com/LrSL7XDKVbgAAAAi/peachcat-cat.gif" alt="">
+                </div>
+                <div class="gif-float absolute -top-20 sm:top-[-8rem] z-0 right-4 sm:right-28 w-24 sm:w-36" style="animation-delay: 1.3s;">
+                    <img class="w-full" src="https://media.tenor.com/A5VhCveZ_ygAAAAi/peach-and-goma-peach-goma.gif" alt="">
+                </div>
+                <div class="gif-float absolute -bottom-16 sm:-bottom-48 z-0 left-4 sm:left-16 w-24 sm:w-40" style="animation-delay: 0.3s;">
+                    <img class="w-full" src="https://media.tenor.com/ewJrc9fZeaQAAAAi/prots-masaj.gif" alt="">
+                </div>
+
+                <!-- DATE COUNTER -->
+                <div class="flex gap-2 sm:gap-5" id="myCountdown">
+                    <div class="bg-rose-50/80 border-2 border-rose-200 rounded-xl w-24 h-32 sm:w-40 sm:h-52 flex justify-center items-center flex-col gap-4 sm:gap-10">
+                        <h1 id="years" class="text-4xl sm:text-6xl font-bold text-rose-500 counter-pulse">0</h1>
+                        <p class="font-bold text-base sm:text-xl text-rose-400">Year</p>
+                    </div>
+                    <div class="bg-rose-50/80 border-2 border-rose-200 rounded-xl w-24 h-32 sm:w-40 sm:h-52 flex justify-center items-center flex-col gap-4 sm:gap-10">
+                        <h1 id="months" class="text-4xl sm:text-6xl font-bold text-rose-500 counter-pulse">0</h1>
+                        <p class="font-bold text-base sm:text-xl text-rose-400">Months</p>
+                    </div>
+                    <div class="bg-rose-50/80 border-2 border-rose-200 rounded-xl w-24 h-32 sm:w-40 sm:h-52 flex justify-center items-center flex-col gap-4 sm:gap-10">
+                        <h1 id="days" class="text-4xl sm:text-6xl font-bold text-rose-500 counter-pulse">0</h1>
+                        <p class="font-bold text-base sm:text-xl text-rose-400">Days</p>
+                    </div>
+                </div>
+                <h1 class="text-center font-bold text-sm sm:text-base text-rose-600">Since April 5, 2025 💕</h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+            envelope.classList.toggle('open');
+        });
+
+        // Generate raining hearts
+        const heartsContainer = document.querySelector('.hearts-rain');
+        const heartSymbols = ['♥', '♡', '❤', '💕'];
+        for (let i = 0; i < 30; i++) {
+            const heart = document.createElement('span');
+            heart.classList.add('heart-drop');
+            heart.textContent = heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.fontSize = (Math.random() * 1.2 + 0.6) + 'rem';
+            heart.style.animationDuration = (Math.random() * 5 + 6) + 's';
+            heart.style.animationDelay = (Math.random() * 8) + 's';
+            heart.style.opacity = Math.random() * 0.15 + 0.05;
+            heartsContainer.appendChild(heart);
+        }
+    </script>
+    
+    <script src="app.js"></script> 
+</body>
+</html>

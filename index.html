@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You 💌</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="icons/tab-icon.png"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating hearts background -->
+    <div class="hearts-bg">
+        <span class="floating-heart" style="left:5%; animation-delay:0s;">♥</span>
+        <span class="floating-heart" style="left:15%; animation-delay:1.5s;">♥</span>
+        <span class="floating-heart" style="left:25%; animation-delay:3s;">♥</span>
+        <span class="floating-heart" style="left:35%; animation-delay:0.8s;">♥</span>
+        <span class="floating-heart" style="left:45%; animation-delay:2.2s;">♥</span>
+        <span class="floating-heart" style="left:55%; animation-delay:4s;">♥</span>
+        <span class="floating-heart" style="left:65%; animation-delay:1s;">♥</span>
+        <span class="floating-heart" style="left:75%; animation-delay:3.5s;">♥</span>
+        <span class="floating-heart" style="left:85%; animation-delay:2s;">♥</span>
+        <span class="floating-heart" style="left:95%; animation-delay:0.5s;">♥</span>
+    </div>
+
+    <div class="container">
+        <div class="lock-icon">🔒</div>
+        <h2>What's the password?</h2>
+        <p class="subtitle">Only the real ones know...</p>
+        <input type="password" id="passwordInput" placeholder="Enter the password">
+        <label class="show-pass">
+            <input type="checkbox" id="showPassword"> Show Password
+        </label>
+        <button id="submitButton">Let Me In 💕</button>
+        <div class="hint" id="hint">💡 Hint: What does Michael hate the most?</div>
+        <div class="hint" id="hint1">💡 Hint: I say it almost all the time</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
